@@ -41,6 +41,7 @@
                        url:    "http://182.72.192.18/webservicedemo/service.asmx/HelloWorld",
                        data: '{}',
                        success: function(msg) {
+						   alert(msg);
                        jsonArray = $.parseJSON(msg.d);
                        var $ul = $( '<ul id="details">' );
                        for(i=0; i < jsonArray.length; i++)
