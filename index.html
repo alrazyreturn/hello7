@@ -58,6 +58,26 @@
             }
 
 
+
+	function test2() {
+                $.ajax({
+                       type: "POST",
+                       contentType: "application/json; charset=utf-8",
+                       dataType: "json",
+                       url:    "http://182.72.192.18/webservicedemo/service.asmx/HelloWorld",
+                       data: '{}',
+                       success: function(msg) {
+						   alert(msg);
+                      
+                       },
+                       error: function(msg) {
+                       alert("Error");
+                       }
+                       });
+
+            }
+
+
 			
 			 
 			
@@ -100,6 +120,13 @@
         <div>
 		<a href="#" data-role="button" onClick="LoginButton_onclick()">Welcome my Button2</a>	
         </div>
+        
+        
+                <div>
+		<a href="#" data-role="button" onClick="test2()">Test2</a>	
+        </div>
+        
+        
         <div id="insert_data" >
         </div>	
         
